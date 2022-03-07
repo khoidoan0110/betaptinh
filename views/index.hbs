@@ -1,0 +1,59 @@
+<form name="calculator" method="POST">
+            <div class="row" style="width: 600px;">
+            <!--Left column: Inputs-->
+                <div class="col">
+                    <!--First num-->
+                    <div class="row" style="width: 320px;">
+                        <div class="col-sm">
+                            <em>Số thứ nhất</em>
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" id="num1" name="x" value={{x}}>
+                        </div>
+                    </div>
+                    <!--Second num-->
+                    <div class="row" style="width: 320px;">
+                        <div class="col-sm">
+                            <em>Số thứ hai</em>
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" id="num2" name="y" value={{y}}>
+                        </div>
+                    </div>
+                    <!--Result-->
+                    <div class="row" style="width: 320px;">
+                        <div class="col-sm">
+                            <em>Kết quả</em>
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" id="result" value={{k}}>
+                        </div>
+                    </div>
+                    <!--Notification-->
+                    <div class="row" style="width: 320px;">
+                        <div class="col-sm">
+                            <em>Thông báo</em>
+                        </div>
+                        <div class="col-sm" >
+                            <div id="notification" style="color: red; width: 190px; white-space: nowrap;">
+                                {{noti}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--Right column: 4 options-->
+            <div class="col">
+                <form>
+                    <input type="radio" id="sum" name="op" value="+">
+                    <label for="sum">Cộng</label>&nbsp;
+                    <input type="radio" id="sub" name="op" value="-">
+                    <label for="sub">Trừ</label><br>
+                    <input type="radio" id="mul" name="op" value="*">
+                    <label for="mul">Nhân</label>&nbsp;
+                    <input type="radio" id="divide" name="op" value="/">
+                    <label for="divide">Chia</label><br>
+                    <button type="submit" class="btn btn-primary" >Tính</button>
+                </form> 
+            </div>
+        </div>
+</form>
